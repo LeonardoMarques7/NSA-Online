@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tela de Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section class="justify-content-center w-100 " style="width: 400px;">
+            <form class="form" autocomplete="on" width="300px">
+                <img src="./logo-nsa.png" alt="Logo" style="width:250px;" title="Nsa-Online">
+                <div class="codigo row">
+                    <div class="col" style="width: 180px; margin-left: 12px;">
+                        <label for="tipo-usuario">Enviar como:</label>
+                        <select class="form-select" id="tipo-usuario" name="tipo-usuario" required>
+                            <option class="opc" value="aluno">Aluno</option>
+                            <option class="opc" value="responsavel">Responsável</option>
+                            <option class="opc" value="professor">Professor</option>
+                        </select>
+                    </div>
+                    <div class="col" id="codigo-etec" style="margin-left: 12px;">
+                        <label for="etec">Código Etec: </label>
+                        <input class="form-control" placeholder="000" type="etec" id="etec" name="etec" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; width: 125px;" required><br>
+                    </div>
+                </div>
+                <label for="cpf">CPF do Professor/Aluno:</label>
+                <input class="form-control" type="number" id="cpf" name="cpf" style="padding: 5px; border-radius: 5px; border: 1px solid #ccc; width: 300px;" required autocomplete="current-password">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Não sou um robô</label>
+                </div>
+                <div class="codigo row d-block fundo">
+                    <a href="./enviando.html"><input class="btn btn-login-l btn-outline-primary shadow" type="btn" value="Enviar" style="width: 100px;"></a>
+                    <a href="./index.html" style="margin: 0px; padding: 0px;"><input type="button" value="Voltar" style="width: 100px;" class="btn btn-login-d btn-outline-dark shadow" ></a>
+                </div>
+            </form>
+            <div id="popup" style="display: none; margin-top: 200px;" class="text-center rounded">
+                Senha incorreta!! Tente novamente.
+            </div>
+        </section><br><br>
+        <section class="footer"> 
+            <hr>
+            <h4 class="text-center">Feito por Leonardo Marques</h4>
+            <hr>
+        </section>
+        <script src="./script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
