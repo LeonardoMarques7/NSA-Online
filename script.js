@@ -58,7 +58,7 @@ function PoupErro () {
   popup.style.display = 'block';
     setTimeout(() => {
       popup.style.display = 'none';
-    }, 5000);
+    }, 3000);
 }
 
 
@@ -137,21 +137,6 @@ function validarSupervisor() {
     alert(`Bem-vindo(a) Supervisor(a), ${supervisorEncontrado.nome}!`); 
     AbrirSites('supervisao.html');
   } 
-  else 
-    PoupErro();
-}
-
-function validarNovaSenha() {
-  const cpf = document.getElementById('cpf').value;
-  const etec = document.getElementById('etec').value;
-
-  const professor1Encontrado = professores.find(professor => professor.cpf === cpf && professor.etec === etec); 
-  const aluno1Encontrado = alunos.find(aluno => aluno.cpf === cpf && aluno.etec === etec); 
-  const responsavel1Encontrado = responsaveis.find(responsavel => responsavel.cpf === cpf && responsavel.etec === etec); 
-  
-  if (professor1Encontrado || aluno1Encontrado || responsavel1Encontrado) {
-    AbrirSites('enviado.html');
-  }
   else 
     PoupErro();
 }

@@ -53,3 +53,7 @@ select:hover {
 .fundo {
     background-color: rgb(240, 248, 255);
 }
+
+.form-check, .form-check-input, .form-check-label {
+    cursor: pointer;
+}
