@@ -13,11 +13,9 @@ input:focus {
     border: 1px solid cornflowerblue;
 }
 
-#popup {
+#popup, #popup1 {
     display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     padding: 20px;
     border: 1px solid red;
@@ -27,6 +25,7 @@ input:focus {
     font-size: 16px;
     opacity: 80%;
     transition: 5s;
+    left: 50%;
 }
 
 
@@ -56,4 +55,8 @@ select:hover {
 
 .form-check, .form-check-input, .form-check-label {
     cursor: pointer;
+}
+
+.principal {
+    height: 100vh;
 }

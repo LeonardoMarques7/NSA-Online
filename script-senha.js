@@ -1,4 +1,4 @@
-const popup = document.getElementById('popup');
+const popup = document.getElementById('popup1');
 
 const alunos = [
     { rm: '121212', senha: '131313', etec: '016', nome: 'Leonardo Marques', cpf: '10'},
